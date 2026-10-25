@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "vt_parser",
+    "pty_worker",
+    "renderer",
+    "command_browser",
+    "app",
+]
+
+[package]
+name = "luna"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+
+[features]
+# Enable platform-specific crates
+posix = []
+windows = []

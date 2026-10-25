@@ -1,0 +1,15 @@
+[package]
+name = "renderer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winit = "0.29"
+wgpu = "0.19"
+harfbuzz = "0.4"
+bytemuck = { version = "1", features = ["derive"] }
+crossbeam-channel = "0.5"
+vt_parser = { path = "../vt_parser" }
+
+[features]
+default = []

@@ -1,0 +1,20 @@
+[package]
+name = "terminal_emu"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "luna"
+path = "src/main.rs"
+
+[dependencies]
+pty_worker      = { path = "../pty_worker" }
+vt_parser       = { path = "../vt_parser" }
+renderer        = { path = "../renderer" }
+command_browser = { path = "../command_browser" }
+crossbeam-channel = "0.5"
+tokio           = { version = "1", features = ["rt-multi-thread", "macros"] }
+winit           = "0.29"
+log             = "0.4"
+env_logger      = "0.11"
+pollster        = "0.3"
